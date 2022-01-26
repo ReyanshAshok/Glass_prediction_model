@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run improved_iris_app.py
+web: sh setup.sh && streamlit run glass_type_new_widgets.py
