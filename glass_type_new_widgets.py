@@ -116,7 +116,7 @@ if classifier=='LogisticRegression':
 	c_value=st.sidebar.number_input('Error_rate',1,100,step=1)
 	max_t=st.sidebar.slider('Maximum Iterations',0,100)
 	if st.sidebar.button('Predict'):
-		log_obj=LogisticRegression(C=c_value,max_iter=max_it)
+		log_obj=LogisticRegression(C=c_value,max_iter=max_t)
 		log_obj.fit(X_train,y_train)
 		st.write(log_obj.score(X_train,y_train))
 		test_pred=log_obj.predict(X_test)
